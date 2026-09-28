@@ -1,0 +1,16 @@
+BST TREE STRUCTURE
+
+             A102
+                \
+                A25
+               /   \
+            A120     A7
+                    /  \
+                  A45  B100
+                         \
+                         B12
+                           \
+                           B3
+
+Inorder:
+A102 A120 A25 A45 A7 B100 B12 B3
