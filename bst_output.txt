@@ -1,0 +1,21 @@
+BST IDENTIFICATION NUMBER PROGRAM - SAMPLE OUTPUT
+
+Identification Numbers:
+A102 A25 A7 B100 B12 A120 B3 A45
+
+Inorder Traversal:
+A102 A120 A25 A45 A7 B100 B12 B3
+
+Search Comparison:
+
+Key: B12
+BST comparisons: 5
+Linear Search comparisons: 5
+
+Key: A45
+BST comparisons: 4
+Linear Search comparisons: 8
+
+Key: C10 (not present)
+BST comparisons: 6
+Linear Search comparisons: 8

@@ -1,0 +1,77 @@
+BST ANALYSIS
+
+Identification numbers:
+A102, A25, A7, B100, B12, A120, B3, A45
+
+The complete identification numbers are compared as strings using strcmp().
+
+BST insertion order:
+A102, A25, A7, B100, B12, A120, B3, A45
+
+BST structure:
+
+             A102
+                \
+                A25
+               /   \
+            A120     A7
+                    /  \
+                  A45  B100
+                         \
+                         B12
+                           \
+                           B3
+
+Inorder traversal:
+A102 A120 A25 A45 A7 B100 B12 B3
+
+SEARCH COMPARISON
+
+1. B12
+BST comparisons = 5
+Linear Search comparisons = 5
+
+2. A45
+BST comparisons = 4
+Linear Search comparisons = 8
+
+3. C10 (not present)
+BST comparisons = 6
+Linear Search comparisons = 8
+
+KEY LENGTH ANALYSIS
+
+Longer identification keys may require more character comparisons.
+For example, A102 and A120 share the characters A1, so additional
+characters must be examined to determine their order.
+
+Key length does not directly determine BST height. BST height mainly
+depends on the number of nodes and their insertion order.
+
+INSERTION ORDER ANALYSIS
+
+Insertion order can make a BST balanced or highly skewed.
+
+Best case:
+Height is approximately O(log n)
+Search is O(log n)
+
+Average case:
+Search is generally O(log n) for a reasonably balanced BST.
+
+Worst case:
+Height becomes O(n)
+Search becomes O(n)
+
+A sorted or unfavorable insertion order can produce a tree similar
+to a linked list.
+
+RECOMMENDATION
+
+For a growing database, use a self-balancing BST such as an AVL tree
+or Red-Black tree to maintain O(log n) search, insertion and deletion
+in the usual case.
+
+For a large disk-based government database, a B-tree or B+ tree index
+is also suitable because it is designed for efficient indexed storage
+and searching.
